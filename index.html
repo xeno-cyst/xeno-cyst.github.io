@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>made by @xeno <3</title>
+<title>made by @yungstatus on discord <3</title>
 <style>
   body {
-    background-color: #000000; /* AMOLED black */
-    color: #ffffff; /* White text */
+    background-color: #000000; 
+    color: #ffffff; 
     font-family: monospace;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Make sure the body takes up the full viewport height */
-    margin: 0; /* Remove default margin */
+    height: 100vh; 
+    margin: 0;
   }
 </style>
 </head>
@@ -24,11 +24,9 @@
     <p>When your browser asks you if you'd always want to allow meteoritics-reii.github.io links to open a application, select yes.</p>
   </div>
 <script>
-  // Get the URL parameters
   const urlParams = new URLSearchParams(window.location.search);
   const app = urlParams.get('app');
 
-  // Redirect based on app parameter
   switch (app) {
     case 'calculator':
       window.location.href = 'calculator://';
@@ -48,10 +46,7 @@
       window.location.href = 'minecraft://';
       break;
     default:
-      // Handle other cases or no app specified
       alert('Unknown or no app specified!');
-      // Redirect to homepage
-      window.location.href = 'https://example.com';
   }
 </script>
 </body>
